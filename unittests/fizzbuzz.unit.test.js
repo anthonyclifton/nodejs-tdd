@@ -16,4 +16,14 @@ describe("fizzbuzz", () => {
         const result = Fizzbuzz(15);
         expect(result).toEqual("Fizzbuzz");
     });
+
+    it("should return the input for anything else", () => {
+        const result = Fizzbuzz(1);
+        expect(result).toEqual(1);
+    });
+
+    it("should return zero if input is undefined", () => {
+        const result = Fizzbuzz(undefined);
+        expect(result).toEqual(0);
+    })
 });
