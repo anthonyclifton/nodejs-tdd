@@ -1,0 +1,25 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "service.js",
+  "repository": "",
+  "author": "Anthony Clifton",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/service.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.1",
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "enzyme": "^3.9.0",
+    "jest": "^24.7.1",
+    "tcomb": "^3.2.29"
+  }
+}
