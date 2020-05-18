@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const fizzbuzz = require('./fizzbuzz');
 
 const app = express();
 app.use(bodyParser.json());
@@ -13,9 +14,9 @@ app.route('/health').get((req, res) => {
     res.send('Healthy');
 });
 
-app.route('/playlist').get((req, res) => {
-    console.log('sending playlist');
-    res.send({playlist: ["1.mp4", "2.mp4", "3.mp4"]});
+app.route('/fizzbuzz').get((req, res) => {
+    console.log('sending fizzbuzz');
+    res.send({result: fizzbuzz()});
 });
 
 function startServer() {
