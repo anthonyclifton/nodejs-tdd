@@ -6,4 +6,9 @@ describe("fizzbuzz", () => {
         const result = Fizzbuzz(3);
         expect(result).toEqual("Fizz");
     });
+
+    it("should return buzz when input is five", () => {
+        const result = Fizzbuzz(5);
+        expect(result).toEqual("Buzz");
+    });
 });
