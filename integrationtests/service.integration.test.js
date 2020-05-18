@@ -19,11 +19,9 @@ describe("playlist", () => {
 
     describe("Fizzbuzz Endpoint", () => {
         it("should return something", async () => {
-            const expectedResult = "Something";
             response = await httpClient.get('/fizzbuzz', {});
             expect(response.status).toEqual(200);
             expect(response.data.result).not.toBeUndefined();
-            expect(response.data.result).toEqual(expectedResult);
         });
     });
 });

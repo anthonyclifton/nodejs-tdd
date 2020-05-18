@@ -1,5 +1,5 @@
 const fizzbuzz = () => {
-    return "Something"
+    return "Fizz"
 };
 
 module.exports = fizzbuzz;
