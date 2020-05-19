@@ -1,7 +1,7 @@
 const Enzyme = require('enzyme');
 const axios = require('axios');
 
-describe("playlist", () => {
+describe("fizzbuzz", () => {
     let httpClient;
     let response;
 
@@ -18,10 +18,16 @@ describe("playlist", () => {
     });
 
     describe("Fizzbuzz Endpoint", () => {
-        it("should return something", async () => {
-            response = await httpClient.get('/fizzbuzz', {});
+        it("should return Fizz when input is three", async () => {
+            const params = {
+                params: {
+                    input: 3
+                }
+            };
+            response = await httpClient.get('/fizzbuzz', params);
             expect(response.status).toEqual(200);
             expect(response.data.result).not.toBeUndefined();
+            expect(response.data.result).toEqual("Fizz");
         });
     });
 });

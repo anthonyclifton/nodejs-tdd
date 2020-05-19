@@ -15,8 +15,9 @@ app.route('/health').get((req, res) => {
 });
 
 app.route('/fizzbuzz').get((req, res) => {
+    const input = req.query.input;
     console.log('sending fizzbuzz');
-    res.send({result: fizzbuzz()});
+    res.send({result: fizzbuzz(input)});
 });
 
 function startServer() {
