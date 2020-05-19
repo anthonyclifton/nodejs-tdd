@@ -1,5 +1,5 @@
 const fizzbuzz = (input) => {
-    if (input === 15) {
+    if (input % 15 === 0) {
         return "Fizzbuzz";
     } else if (input % 5 === 0) {
         return "Buzz";
