@@ -17,6 +17,11 @@ describe("fizzbuzz", () => {
         expect(result).toEqual("Buzz");
     });
 
+    it("should return buzz when input is multiple of five", () => {
+        const result = Fizzbuzz(5 * 2);
+        expect(result).toEqual("Buzz");
+    });
+
     it("should return fizzbuzz when input is fifteen", () => {
         const result = Fizzbuzz(15);
         expect(result).toEqual("Fizzbuzz");
