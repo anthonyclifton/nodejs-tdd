@@ -3,6 +3,13 @@
 Test drive Fizzbuzz as a REST service, implemented with
 NodeJS.
 
+## The Rules
+* If input is a multiple of 3, return Fizz
+* If input is a multiple of 5, return Buzz
+* If input is a multiple of 15 (both 3 and 5), return Fizzbuzz
+* Otherwise, return the input
+
+## Running and Testing
 * Clone repository
 * Use WebStorm (or another IDE if you're comfortable) to
 open the repository
