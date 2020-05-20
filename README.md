@@ -16,6 +16,7 @@ open the repository
 * `npm install` to get dependencies
 * `npm start` in one terminal window to start service
 * `npm test` in another terminal window to run tests
+* `npm run ci` to start the service, run tests, and then shut it down
 
 Note: Right now, unit and integration tests are both run.
 You can run tests individually or in suites within the
