@@ -1,9 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const fizzbuzz = require('./fizzbuzz');
 
 const app = express();
-app.use(bodyParser.json());
 const port = 8081;
 
 setupCorsSupport();
