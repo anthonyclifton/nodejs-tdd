@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "start": "node src/service.js"
+    "start-server": "./start-server.sh",
+    "stop-server": "./stop-server.sh",
+    "ci": "npm run start-server && npm run test && npm run stop-server"
   },
   "dependencies": {
     "axios": "^0.18.0",
